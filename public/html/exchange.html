@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="/css/exchange.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap');
+</style>
+    
+    <title>Exchange Rate</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+</head>
+<body>
+<header>
+    
+    <h1>Exchange Rate</h1>
+
+        <ul class = "nav"> 
+            <li><a href="index.html">Home</a></li>
+            <li><a href="weather.html">Weather</a></li>
+            <li><a href="#">Exchange Rate</a></li>
+        </ul>
+        </header>
+
+        <div class= "bodyText">
+            <h2 id="currencyHeading">Starting Currency</h2>
+            <select name="fromCurrency" id="fromCurrency" class="fromCurrency">
+              <option value="Select">Select Starting Currency</option>
+              <option value="CAD">Canadian (CAD)</option>
+              <option value="USD">U.S. Dollar (USD)</option>
+              <option value="EUR">Euro (EUR)</option>
+              <option value="JPY">Japanese Yen (JPY)</option>
+              <option value="GBP">Sterling (GBP)</option>
+              <option value="AUD">Australian Dollar (AUD)</option>
+              <option value="CHF">Swiss Franc (CHF)</option>
+              <option value="HKD">Hong Kong Dollar (HKD)</option>
+              <option value="SGD">Singapore Dollar (SGD)</option>
+              <option value="SEK">Sweedish Krona (SEK)</option>
+            </select>
+
+            <input type="number" id="fromAmount" placeholder="Enter Amount" class="fromAmount" min="0" step="0.01">
+            <div id="exchange-display" class="exchange-display">
+        <div class="card">
+            <p id="CAD">
+                <span class="currency-label">Canadian</span>
+                <span class="exchange-rate"></span>
+                <span class="converted-amount"></span>
+              </p>
+              <p id="USD">
+                <span class="currency-label">U.S. Dollar</span>
+                <span class="exchange-rate"></span>
+                <span class="converted-amount"></span>
+              </p>
+              <p id="EUR">
+                <span class="currency-label">Euro</span>
+                <span class="exchange-rate"></span>
+                <span class="converted-amount"></span>
+              </p>
+              <p id="JPY">
+                <span class="currency-label">Japanese Yen</span>
+                <span class="exchange-rate"></span>
+                <span class="converted-amount"></span>
+              </p>
+              <p id="GBP">
+                <span class="currency-label">Sterling</span>
+                <span class="exchange-rate"></span>
+                <span class="converted-amount"></span>
+              </p>
+              <p id="AUD">
+                <span class="currency-label">Australian Dollar</span>
+                <span class="exchange-rate"></span>
+                <span class="converted-amount"></span>
+              </p>
+              <p id="CHF">
+                <span class="currency-label">Swiss Franc</span>
+                <span class="exchange-rate"></span>
+                <span class="converted-amount"></span>
+              </p>
+              <p id="HKD">
+                <span class="currency-label">Hong Kong Dollar</span>
+                <span class="exchange-rate"></span>
+                <span class="converted-amount"></span>
+              </p>
+              <p id="SGD">
+                <span class="currency-label">Singapore Dollar</span>
+                <span class="exchange-rate"></span>
+                <span class="converted-amount"></span>
+              </p>
+              <p id="SEK">
+                <span class="currency-label">Swedish Krona</span>
+                <span class="exchange-rate"></span>
+                <span class="converted-amount"></span>
+              </p>
+        </div>
+    </div>
+<script type="module" src="/js/exchange.js"></script>
+<script type="module" src="/js/script.js"></script>
+    </body>
+    </html>

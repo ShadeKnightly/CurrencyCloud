@@ -1,0 +1,61 @@
+<!--https://openweathermap.org/current-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="/css/weather.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap');
+</style>
+    
+    <title>Landing Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+</head>
+
+<body>
+    <header>
+        
+        <h1>Weather</h1>
+    
+            <ul class = "nav"> 
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Weather</a></li>
+                <li><a href="exchange.html">Exchange Rate</a></li>
+            </ul>
+    </header>
+
+    <div class= "bodyText">
+      <h2 id="cityHeading">Select City</h2>
+      <select name="citySelect" id="citySelect" class="citySelect">
+        <option value="Select">Select City</option>
+        <option value="Calgary">Calgary</option>
+        <option value="Vancouver">Vancouver</option>
+        <option value="Kelowna">Kelowna</option>
+        <option value="Toronto">Toronto</option>
+        <option value="Tokyo">Tokyo</option>
+        <option value="London">London</option>
+        <option value="Paris">Paris</option>
+        <option value="New York">New York</option>
+        <option value="Los Angeles">Los Angeles</option>
+        <option value="Dubai">Dubai</option>
+      </select>
+    
+      <div class="card-content">
+      <p id="temperature">Temperature:</p>
+      <p id="description">Forcast:</p>
+      <p id="timestamp">Last Updated:</p>
+      </div>
+
+      <script src="/js/weather.js" defer></script>
+  </body>
+  </html>
+
+

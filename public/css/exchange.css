@@ -1,0 +1,158 @@
+body{
+  margin-top: 0px;
+  overflow: visible;
+}
+
+.bodyText{
+  margin-top: 0px;
+}
+
+.card {
+  background:rgb(1, 37, 51);
+  width: 100%;
+  height: 15em;
+  padding: 5px;
+  margin-top: 50px;
+  min-width: 100%;
+  border-radius: 80px;
+  overflow: visible;
+  position: relative;
+  z-index: 1;
+  display: flex;
+ }
+  
+  .card p {
+    height: 100%;
+    flex: 1;
+    overflow:visible;
+    min-width: 1em;
+    cursor: pointer;
+    transition: all .5s;
+    background: none;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+  }
+
+
+  
+  .card p:hover {
+    flex: 3;
+  }
+  
+  .card p span {
+    min-width: 10em;
+    padding: .5em;
+    text-align: center;
+    transform: rotate(-90deg);
+    transition: all 1s;
+    text-transform: uppercase;
+    font-size: 1em; 
+    letter-spacing: .1em;
+    border-radius: 40px;
+  }
+
+  .card:hover {
+    cursor: pointer;
+    transition: all 1s;
+    box-shadow: 0px 0px 100px 25px rgb(11, 55, 67), inset 0px -1000px 1000px 0px rgb(7, 51, 63);
+  }
+  
+  .card p:hover span {
+    z-index: 1;
+    transform: rotate(0);
+    
+    color: rgb(255, 192, 67);
+    text-shadow: 0 0 2px rgb(5, 69, 74);
+  }
+
+  .card p:hover span:after{
+    z-index:2;
+    content: attr(data-text);
+  }
+
+  .card p span {
+    content: attr(data-text);
+    color: transparent;
+  text-shadow: 0 0 2px rgb(5, 69, 74); /*non-hovered text fades and blurrs*/
+  }
+
+
+  .bodyText:hover{
+    box-shadow: 0px 0px 0px 0px rgb(0, 0, 0), inset 0px 0px 100px 90px rgb(0, 0, 0);
+    color: rgb(255, 228, 92);
+    cursor: custom;
+    background: none;
+    transition: box-shadow 4s ease, color 4s ease, background-color 4s ease-in;
+  }
+  
+  #fromCurrency, #fromAmount{
+  font-size: 15px;
+  background: black;
+  color: rgb(34, 193, 195);
+  border: rgb(34, 193, 195);
+  background: none;
+  outline: none;
+ }
+
+ #fromAmount.placeholder{
+  color: rgb(34, 193, 195);
+  font-size: 15px;
+  background: black;
+  border: none;
+  background: none;
+  outline: rgb(34, 193, 195);
+ }
+
+ #fromCurrency option {
+  background: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ }
+
+ ::placeholder {
+  color: rgb(34, 193, 195);
+  text-align: center;
+}
+
+input{
+  text-align: center;
+}
+
+p {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.5em 0;
+  min-height: 40px; 
+}
+
+.converted-amount{
+  position: absolute;
+}
+
+.converted-amount,
+.exchange-rate {
+  display: block;
+  min-height: .25em; 
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  font-weight: bold;
+  font-size: 1.1em;
+  color: rgb(255, 228, 92);
+  text-align: center;
+}
+
+.card p:hover .converted-amount,
+.card p:hover .exchange-rate {
+  opacity: 1;
+}
+
+.card p {
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}

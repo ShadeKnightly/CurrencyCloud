@@ -1,0 +1,56 @@
+<!--Assignemnt 2: Utilizing External API Services 
+OBJECTIVE 
+Students will use their JavaScript and/or jQuery knowledge to create a dynamic web page to 
+display data obtained from two different API services. Students must develop a website that 
+utilizes on-demand API calls to a currency exchange rate API service and a weather API service.
+
+• The temperature is correctly displayed for a selected location. (5 marks)
+• The weather description and timestamp are correctly displayed. (5 marks)
+• CSS style is properly applied to your weather information. (5 marks)
+• The API key is protected by storing it in a .env file. (2.5 marks)-->
+
+<!--At least 10 different currencies are available to be selected from. (5 marks)
+• Users can select “from” currency and “to” currency. (5 marks)
+• The exchange rate for the selected operation is visually displayed on screen.
+Ex.: 1 USD = 1.44 CAD (5 marks)
+• The API key is protected by storing it in a .env file.-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap');
+</style>
+
+    
+    <title>Landing Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+</head>
+<body>
+<header>
+    
+    <h1>Currency Cloud</h1>
+
+        <ul class = "nav"> 
+            <li><a href="#">Home</a></li>
+            <li><a href="weather.html">Weather</a></li>
+            <li><a href="exchange.html">Exchange Rate</a></li>
+        </ul>
+    
+</header>
+<div class= "bodyText">
+<h1>Welcome!</h1>
+<p>This app provides real-time weather information and currency exchange rates.</p>
+</div>
+</body>
+</html>
