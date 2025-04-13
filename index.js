@@ -14,6 +14,10 @@ const app = express();
 const PORT = 3000;
 const EXCHANGE_API_KEY = process.env.EXCHANGE_API_KEY;
 
+// Route to serve index.html as the default page
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public/html/index.html'));
+
 app.use(express.static(path.join(__dirname, 'public')));
 
 
